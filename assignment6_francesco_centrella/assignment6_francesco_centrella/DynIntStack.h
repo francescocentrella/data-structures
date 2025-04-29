@@ -23,8 +23,11 @@ public:
    ~DynIntStack();
 
    // Stack operations
-   void push(int);
-   void pop(int &);
+   void push(char);
+   void pop(char &);
    bool isEmpty();
-}; 
+   std::string convertToPostfix(std::string &infix);
+    char stackTop();
+    int precedence(char op);
+};
 #endif
